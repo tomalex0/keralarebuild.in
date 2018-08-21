@@ -22,9 +22,9 @@
       </trans-unit>
       <trans-unit id="4eaa2f96bb9d9901c393c59155a5e18e7a2c2ab6" datatype="html">
         <source>
-  About Us
-</source>
-<target>ഞങ്ങളേക്കുറിച്ച്</target>
+          About Us
+        </source>
+        <target>ഞങ്ങളേക്കുറിച്ച്</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/about/about.component.html</context>
           <context context-type="linenumber">1</context>
@@ -33,9 +33,9 @@
       </trans-unit>
       <trans-unit id="37d4203d87e1ccb6f757367d0dca541d2a0f485b" datatype="html">
         <source>
-    Welcome
-  </source>
-  <target>സ്വാഗതം</target>
+          Welcome
+        </source>
+        <target>സ്വാഗതം</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">3</context>

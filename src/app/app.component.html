@@ -1,8 +1,32 @@
+<mat-drawer-container class="app-container" autosize>
+  <mat-drawer #drawer class="app-sidenav" mode="side">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/" i18n="Home Navigation">Home</a>
+      <a mat-list-item routerLink="/about"  i18n="About Navigation">About</a>
+    </mat-nav-list>
+  </mat-drawer>
 
-<nav>
-  <a routerLink="/" i18n="Home Navigation">Home</a>
-  <a routerLink="/about" i18n="About Navigation">About</a>
-</nav>
+  <div class="app-sidenav-content">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button mat-icon-button  (click)="drawer.toggle()" ><mat-icon>menu</mat-icon></button>
+        <span>Rebuild Kerala</span>
+        <!-- This fills the remaining space of the current row -->
+        <span class="app-fill-remaining-space"></span>
 
-<router-outlet></router-outlet>
+        <button mat-button [matMenuTriggerFor]="menu">Language</button>
+        <mat-menu #menu="matMenu">
+          <a mat-menu-item href="./en">English</a>
+          <a mat-menu-item href="./ml">Malayalam</a>
+        </mat-menu>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+
+  </div>
+
+</mat-drawer-container>
+
+
 

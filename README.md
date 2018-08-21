@@ -9,7 +9,7 @@ Website to keep info related to how we can rebuild Kerala after devastating floo
 - follow below steps
 
 ### Development
-- `ng serve --configuration=ml --open` - `Malayalam version`
+- `ng serve --open --configuration=ml` - `Malayalam version`
 - `ng serve --open` - `English version `
 
 ### Build
